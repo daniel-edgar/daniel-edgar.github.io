@@ -1,1 +1,0 @@
-# daniel-edgar.github.io

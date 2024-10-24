@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Daniel Edgar - Contact</title>
+  </head>
+  <body>
+    <div id="loader">
+      <img src="./assets/videos/loader.gif" alt="">
+    </div>
+    
+    <nav class="nav">
+      <div class="nav-bar">
+        <div class="nav-bar-container">
+          <ul>
+            <li><a href="./" class="nav-link">Home</a></li>
+            <li><a href="./myprocess.html" class="nav-link">My Process</a></li>
+            <li><a href="./contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+        <a href="mailto: danieljamesedgar@outlook.com" class="nav-mail mail"
+          ><img src="./assets/images/mail-icon.png" alt=""
+        /></a>
+
+        <button class="hamburger-container">
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+        </button>
+      </div>
+
+      <div class="mobile-nav-bar">
+        <ul>
+          <li><a href="./" class="nav-link">Home</a></li>
+          <div class="seperate-links"></div>
+          <li><a href="./myprocess.html" class="nav-link">My Process</a></li>
+          <div class="seperate-links"></div>
+          <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="content-wrapper">
+      <section class="contact-section">
+        <h2 class="larger-header-text left">Contact Me</h2>
+        <p class="description left">
+          Have a project in mind or need help bringing your website to life? Get
+          in touch. I’m ready to turn your ideas into a custom, responsive site
+          that stands out. Drop me a message, and I’ll get back to you as soon
+          as possible.
+        </p>
+        <div class="contact-form-container">
+            <div class="contact-form left">
+              <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                id="contact-form"
+              >
+                <!-- api call -->
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="72f72506-c1ce-4188-8b31-6a6cd3148140"
+                />
+                <!-- API ACCESS-->
+  
+                <input type="text" class="input" name="businessName"
+                placeholder="Business Name" aria-label="Business Name" required
+                aria-required="true" autocomplete="no" oninvalid=>
+                <input
+                  type="text"
+                  class="input"
+                  name="firstName"
+                  placeholder="First Name"
+                  aria-label="First Name"
+                  required
+                  aria-required="true"
+                />
+                <input
+                  type="text"
+                  class="input"
+                  name="lastName"
+                  placeholder="Last Name"
+                  aria-label="First Name"
+                  required
+                  aria-required="true"
+                />
+                <input
+                  type="email"
+                  class="input"
+                  name="contactEmail"
+                  placeholder="Contact E-Mail"
+                  aria-label="Contact E-Mail"
+                  required
+                  aria-required="true"
+                  autocomplete="no"
+                />
+                <select
+                  class="input"
+                  name="typeOfBusiness"
+                  aria-label="Type of Business select"
+                  required
+                  aria-required="true"
+                >
+                  <option selected value="">Type of Business</option>
+                  <option value="Restaurant">Restaurant</option>
+                  <option value="Service">Service</option>
+                  <option value="eCommerce">E-Commerce</option>
+                  <option value="Other">Other</option>
+                </select>
+                <textarea
+                  class="input"
+                  name="message"
+                  placeholder="Message"
+                  aria-label="Message"
+                  required
+                  aria-required="true"
+                ></textarea>
+                <div class="submit-email-container">
+                  <button type="submit" class="input" id="submit-button">
+                    Submit
+                  </button>
+                  <a href="mailto: danieljamesedgar@outlook.com"
+                    ><img src="./assets/images/mail-icon.png" alt=""
+                  /></a>
+                </div>
+  
+                <div id="form-send-success"></div>
+              </form>
+            </div>
+          </div>
+
+          <div class="circle-one">
+              <div class="circle-two"></div>
+          </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="nav-links">
+          <a href="./">Home</a>
+          <a href="./myprocess.html">My Process</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="communication-links">
+          <a href="mailto: danieljamesedgar@outlook.com" id="email-link">Email</a>
+          <p class="emailto">danieljedgar@outlook.com</p>
+        </div>
+      </div>
+      <div class="footer-circle">
+        <div class="footer-circle-overlap"></div>
+      </div>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
